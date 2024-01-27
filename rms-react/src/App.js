@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+//import { Routes } from 'react-router-dom';
+import Header from './components/user/header/Header'
+import Catagories from './components/user/catagories/catogary'
+import FeaturedJobs from './components/user/featuredJobs/featuredJob'
+import Footer from './components/user/footer/footer'
+import Job from './components/user/jobs/job'
+import Page from './components/user/pages/page'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+  <> 
+  <Header />
+  <Catagories />
+  <FeaturedJobs />
+  <Job />
+  <Page />
+  <Footer />
 
-export default App;
+  </>
+    );
+};
+
+export default App

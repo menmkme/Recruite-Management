@@ -3,15 +3,15 @@ import MasuRaiItem from './masuRaiItem';
 
 const masuRai = () => {
   return (
-    <div className='masu_rai'>
-      <div className="container">
-        <div className="masu_rai-info">
-          <h1 className="masu_rai-info__heading">
+    <div className=''>
+      <div className="">
+        <div className="">
+          <h1 className="">
             Wadan da Suke a Raye
           </h1>
-          <p className='masu_rai-info__des'>Su 9 ne suka rage daga cikin wadan da suka rage acikin yaran Madaki</p>
+          <p className=''>Su 9 ne suka rage daga cikin wadan da suka rage acikin yaran Madaki</p>
         </div>
-        <div className="masu_rai--wrapper">
+        <div className="">
           <MasuRaiItem />
           <MasuRaiItem />
           <MasuRaiItem />

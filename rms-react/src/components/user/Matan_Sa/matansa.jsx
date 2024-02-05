@@ -6,16 +6,16 @@ const Matansa = ({matansas}) => {
  
   
   return (
-    <section className='category'>
-      <div className="category-container">
-        <div className="category-container-info">
-          <h1 className="category-container-info__heading">
+    <section className=''>
+      <div className="">
+        <div className="">
+          <h1 className="">
             MADAKI WIFE'S 
           </h1>
-          <p className="category-container-info__description">
+          <p className="">
           </p>
         </div>
-        <div className="category-container__card-wrapper">
+        <div className="">
           
         {
           

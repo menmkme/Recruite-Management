@@ -1,16 +1,16 @@
 import React from 'react'
 import DeathItem from './deathItem'
 
-const death = () => {
+const Death = () => {
   return (
-    <div className='death'>
-      <div className='container'>
-        <div className='death-info'>
+    <div className=''>
+      <div className=''>
+        <div className=''>
         <h1>
             Wadan da Suke Rigamu Gidan Gaskiya</h1>
           <p>Su 22 ne suka Rigamu Gidan  Gaskiya acikin yaran Madaki</p>
         </div>
-        <div className='death--wrapper'>
+        <div className=''>
           <DeathItem />
           <DeathItem />
           <DeathItem />
@@ -39,4 +39,4 @@ const death = () => {
   )
 }
 
-export default death
+export default Death

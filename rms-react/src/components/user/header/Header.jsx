@@ -2,13 +2,17 @@ import React from 'react'
 import Nav from './Nav';
 import Hero from './Hero';
 
-const header = () => {
-  return <header className='home-header'>
-    <div className='home-header-container'>
+
+const Header = () => {
+
+
+
+  return <header className=''>
+    <div className=''>
       <Nav />
       <Hero />
     </div>
   </header>
 };
 
-export default header
+export default Header;

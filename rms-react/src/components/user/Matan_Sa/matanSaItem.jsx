@@ -8,8 +8,8 @@ const matanSaItem = ({name,state,status,image,description,DOB}) => {
   
   return (
     
-      <div className="category-container__card-wrapper__card">
-        <div className="category-container__card-wrapper">
+      <div className="">
+        <div className="">
         <div>
         <img src={image} alt="Catagory-icon" width="100px" height="100px" />
         <Link to="#"><h1>{name}</h1></Link>

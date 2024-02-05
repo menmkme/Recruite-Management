@@ -17,8 +17,8 @@
             margin-top: 3rem;
             display: grid;
             grid-template-columns: repeat(4,1fr);
-            row-gap: 15rem;
-            column-gap: 15rem;
+            gap: 1rem;
+            
             
             // h1 {
             //     color: $color-golden;
@@ -32,7 +32,9 @@
                 border: $border-card;
                 margin-top: -1px;
                 background: $color-white;
-                padding: 20px;
+                padding: 15px;
+                //padding-right: 150px;
+                
                 text-align: center;
                 cursor: pointer;
                 display: block;

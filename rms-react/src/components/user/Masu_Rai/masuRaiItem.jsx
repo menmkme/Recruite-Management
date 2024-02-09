@@ -4,7 +4,7 @@ import catIcon1 from "../../../assets/images/j.jpg"
 
 const masuRai = () => {
   return (
-    <div className="w-30-l w-40-m center pa2 grow shadow-1 mb2 mt2 inline-flex justify-between">
+    <div className="w-30-l w-40-m w-90 center pa3 pl2 pr2 grow shadow-1 mb2 mt2 inline-flex justify-between">
       <div className="w-40 flex flex-column justify-around">
         <img src={catIcon1} alt="masu_rai-icon" width="100px" height="100px" />
       </div>

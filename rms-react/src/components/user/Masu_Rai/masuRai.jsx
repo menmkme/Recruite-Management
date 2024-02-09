@@ -8,7 +8,7 @@ const masuRai = () => {
         <h1 className="gold b">
           Wadan da Suke a Raye
         </h1>
-        <p className='gold b'>Su 9 ne suka rage daga cikin wadan da suka rage acikin yaran Madaki</p>
+        <p className='gold pa2'>Su 9 ne suka rage daga cikin wadan da suka rage acikin yaran Madaki</p>
       </div>
       <div className="flex flex-row flex-wrap justify-between w-100 pa2">
         <MasuRaiItem />

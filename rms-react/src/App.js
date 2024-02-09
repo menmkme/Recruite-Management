@@ -5,8 +5,8 @@ import MatanSa from './components/user/Matan_Sa/matansa'
 import MasuRai from './components/user/Masu_Rai/masuRai'
 import Footer from './components/user/footer/footer'
 import WmdSkMt from './components/user/death/death'
-//import Page from './components/user/pages/page'
-import MyComponent from './components/MyComponent'
+// import Page from './components/user/pages/page'
+// import MyComponent from './components/MyComponent'
 import { fetchApiData } from './api/api'
 
 
@@ -37,12 +37,14 @@ const App = () => {
   return (
     <>
 
-        <Header />
-        <MatanSa matansas={data.matansas} />
+      <Header />
+      
+       <MatanSa matansas={data.matansas} />
         <MasuRai />
         <WmdSkMt />
-        {/* <Page /> */}
+        {/* <Page />  */}
         <Footer />
+     
 
     </>
   );

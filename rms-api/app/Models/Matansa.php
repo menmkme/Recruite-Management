@@ -9,7 +9,7 @@ class Matansa extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'state', 'status', 'image', 'description', 'DOB'];
+    protected $fillable = ['name', 'state', 'status', 'image', 'description', 'DOB', 'adadin_yara', 'DOD'];
 
 
     

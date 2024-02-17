@@ -18,19 +18,23 @@ class MatansaSeeder extends Seeder
             'name' => "Khatume",
             'state' => "Jos",
             'status' => 'Dead',
-            'image' => 'default.png',
+            'image' => 'http://localhost:8000/files/matansa/a.jpg',
             'description' => 'Dayace daga cikin matan sa',
-            'DOB' => '21/03/1478'
+            'DOB' => '21/03/1478',
+            'adadin_yara' => '8',
+            'DOD' => '21/03/1578'
 
         ]);
         
         DB::table('matansas')->insert([
             'name' => "Aisha(Shatu)",
             'state' => "Abuja",
-            'status' => 'Alive',
-            'image' => 'default.png',
+            'status' => 'Dead',
+            'image' => 'http://localhost:8000/files/matansa/b.jpg',
             'description' => 'Dayace daga cikin matan sa',
-            'DOB' => '21/03/1478'
+            'DOB' => '21/03/1478',
+            'adadin_yara' => '3',
+            'DOD' => '21/03/1578'
 
         ]);
         
@@ -38,9 +42,11 @@ class MatansaSeeder extends Seeder
             'name' => "Aisha",
             'state' => "Kaduna",
             'status' => 'Dead',
-            'image' => 'default.png',
+            'image' => 'http://localhost:8000/files/matansa/c.jpg',
             'description' => 'Dayace daga cikin matan sa',
-            'DOB' => '21/03/1478'
+            'DOB' => '21/03/1478',
+            'adadin_yara' => '13',
+            'DOD' => '21/03/1578'
 
         ]);
         
@@ -48,12 +54,15 @@ class MatansaSeeder extends Seeder
             'name' => "Habiba",
             'state' => "Kano",
             'status' => 'Dead',
-            'image' => 'default.png',
+            'image' => 'http://localhost:8000/files/matansa/d.jpg',
             'description' => 'Dayace daga cikin matan sa',
-            'DOB' => '21/03/1478'
+            'DOB' => '21/03/1478',
+            'adadin_yara' => '10',
+            'DOD' => '21/03/1578',
+            
 
         ]);
 
-        Matansa::factory(5)->create();
+        Matansa::factory(0)->create();
     }
 }

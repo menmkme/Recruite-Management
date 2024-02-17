@@ -20,7 +20,8 @@ class MatansaFactory extends Factory
             'name' => fake()->name(),
             'state' => fake()->state(),
             //'status' => fake()->status(),
-            'image' => 'default.png',
+            'image' => $this->faker->randomElement(['http://localhost:8000/files/matansa/a.jpg','http://localhost:8000/files/matansa/b.jpg',
+                                                    'http://localhost:8000/files/matansa/c.jpg','http://localhost:8000/files/matansa/d.jpg'])
             //'description' => fake()->description(),
             //'DOB' => fake()->DOB(),
 

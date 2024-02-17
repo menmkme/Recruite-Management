@@ -16,9 +16,11 @@ return new class extends Migration
             $table->string('name');
             $table->string('state')->nullable();
             $table->enum('status', ['Dead', 'Alive'])->default('Dead');
-            $table->string('image')->default('default.png');
+            $table->string('image')->default('http://localhost:8000/files/matansa/d.jpg');
             $table->string('description')->nullable();
             $table->string('DOB')->nullable();
+            $table->string('adadin_yara')->nullable();
+            $table->string('DOD')->nullable();
             $table->timestamps();
         });
     }

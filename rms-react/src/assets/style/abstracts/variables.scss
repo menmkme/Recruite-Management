@@ -9,3 +9,11 @@ $color-dark:#1f1e1b;
 $color-white-light: #D5FFE7;
 
 $border-card:1px solid  #f1f1f2;
+
+$colors: hsla(76, 84%, 48%, 0.75) hsla(72, 89%, 76%, 0.75) hsla(189, 83%, 5%, 0.75) hsla(41, 82, 52, .75);
+$size:3rem;
+$thinkness:.5rem;
+
+// calculated variable
+$lat:calc(($size - $thinkness)/2);
+$offset:calc($lat - $thinkness);

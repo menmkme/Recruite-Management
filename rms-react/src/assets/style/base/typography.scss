@@ -1,0 +1,28 @@
+.dead {
+    margin-top: 1rem;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: $color-danger;
+    color: $color-white;
+    font-weight: bolder;
+    transition: all .3s ease-in-out;
+}
+
+.alive {
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: $color-golden;
+    color: $color-dark;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}

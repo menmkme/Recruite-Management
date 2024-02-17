@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import catIcon1 from "../../../assets/images/j.jpg"
+//import catIcon1 from "../../../assets/images/j.jpg"
 
-const masuRai = () => {
+const masuRai = ({name,state,status,image,description,DOB}) => {
   return (
-    <div className="w-30-l w-40-m w-90 center pa3 pl2 pr2 grow shadow-1 mb2 mt2 inline-flex justify-between">
-      <div className="w-40 flex flex-column justify-around">
-        <img src={catIcon1} alt="masu_rai-icon" width="100px" height="100px" />
+    <div className="w-30-l w-40-m w-90 center pa3 pl2 pr2 grow shadow-1 mb2 mt2 inline-flex justify-between masu_rai1--wrapper__card">
+      <div className="w-40 flex flex-column justify-around masu_rai1--wrapper__card--left">
+        <img src={image} alt="masu_rai-icon" width="100px" height="100px" />
       </div>
-      <div className="w-60 tc">
-        <h1>Madaki</h1>
-        <p>Wannan ne dansa na farko</p> <br />
-        <Link to="/" className='br-pill grow pointer bg-gold link black pa1 pl2 pr2'>Yana Zaune a Jos</Link>
+      <div className="w-60 tc masu_rai1--wrapper__card--right">
+        <h1>{name}</h1>
+        <p>{description}</p> <br />
+        <Link to="/" className={status === "Alive" ? "alive" : null}>{status}</Link>
       </div>
     </div>
   )

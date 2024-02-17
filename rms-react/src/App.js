@@ -40,8 +40,8 @@ const App = () => {
       <Header />
       
        <MatanSa matansas={data.matansas} />
-        <MasuRai />
-        <WmdSkMt />
+        <MasuRai yaransas_alive={data.yaransas_alive}/>
+        <WmdSkMt yaransas_dead={data.yaransas_dead}/>
         {/* <Page />  */}
         <Footer />
      

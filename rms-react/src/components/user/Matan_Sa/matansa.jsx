@@ -6,16 +6,16 @@ const Matansa = ({ matansas }) => {
 
 
   return (
-    <section className='w-100 mt2 tc'>
-      <div className="">
-        <div className="">
-          <h1 className="gold">
+    <section className='w-100 mt2 tc category'>
+      <div className="category-container">
+        <div className="category-container-info">
+          <h1 className="category-container-info__heading">
             MADAKI WIVES
           </h1>
-          <p className="">
+          <p className="category-container-info__description">
           </p>
         </div>
-        <div className="">
+        <div className="category-container__card-wrapper">
 
           {
 
@@ -31,12 +31,6 @@ const Matansa = ({ matansas }) => {
               />
             ))
           }
-
-
-
-
-
-          <MatansaItemItem />
         </div>
       </div>
     </section>

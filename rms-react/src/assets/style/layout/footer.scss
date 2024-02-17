@@ -1,5 +1,6 @@
 .footer__section {
     background: $color-golden;
+    
     &__container {
         @include container;
         &__footer {
@@ -62,20 +63,25 @@
 
                 &__form {
                     display: flex;
+                    width: 75%;
+                    margin-left: 2rem;
+                    border-color: aliceblue;
                     input {
-                        width: 55%;
-                        
+                        width: 69%;
+                        height: 34px;
+                        background-color: aliceblue;
                         padding: 0 20px;
                         font-size: 12px;
                         border-top-left-radius: 30px;
                         border-bottom-left-radius: 30px;
                         border: 1px solid #c5bdbd;
                         transition: all .3s;
+                       
                     }
 
                     button {
                         height: 35px;
-                        width: 85px;
+                        width: 76px;
                         text-align: center;
                         padding: 0 20px;
                         font-size: 12px;
@@ -88,8 +94,8 @@
                 }
                 &__social-links {
                     margin-top: 1rem;
-                    margin-left: 1.7em;
-                    font-size: 1.6rem;
+                    margin-left: -.2em;
+                    font-size: 1.7rem;
                     display: flex;
                     
                     a {
@@ -105,7 +111,7 @@
                     }
 
                     a + a {
-                        margin-left: 1.5em;
+                        margin-left: -.2em;
                     }
                 }
             }

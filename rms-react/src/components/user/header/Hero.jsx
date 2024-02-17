@@ -2,8 +2,8 @@ import React from 'react'
 import heroImage from '../../../assets/images/madaki.JPG'
 const Hero = () => {
   return (
-    <div className='inline-flex-ns flex flex-column-reverse-s justify-between pa4 w-100'>
-      <div className='w-60-ns w-100 items-center-s flex flex-column justify-center'>
+    <div className='home-header-container-hero'>
+      <div className='home-header-container-hero__left'>
         <div>
           <h1>Madaki's Family</h1>
           <br />
@@ -23,7 +23,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className='flex flex-column justify-around w-40-ns'>
+      <div className='home-header-container-hero__right'>
         <img src={heroImage} alt='hero' ></img>
       </div>
     </div>

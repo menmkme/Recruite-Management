@@ -14,6 +14,7 @@ import { fetchApiData } from '../../api/api'
 import 'tachyons'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Loader from '../../services/Loader';
+import Contact from './pages/Contact'
 
 const Main = () => {
   const [loader, setLoader] = useState(true);
@@ -42,11 +43,12 @@ const Main = () => {
     <>
     { loader ? ( <Loader /> ) : (
       <>
-      <Header />
+      <Header cmp = "home"/>
       
       <MatanSa matansas={data.matansas} />
        <MasuRai yaransas_alive={data.yaransas_alive}/>
        <WmdSkMt yaransas_dead={data.yaransas_dead}/>
+       <Contact cmp = "contact"/>
        {/* <Page />  */}
        <Footer />
       </>

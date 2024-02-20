@@ -1,0 +1,95 @@
+.contact {
+    padding: 2rem 0;
+    .container {
+        @include container;
+        .contact_div {
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 1rem;
+            padding: 2rem;
+            .contact-form {
+                padding: 3rem;
+                box-shadow: rgba(0,0,0,0.16) 0px 10px 36px 0px, rgba(0,0,0,0.06) 0px 10px 36px 1px;
+
+                .row {
+                    margin-bottom: 1rem;
+                    display: grid;
+                    grid-template-columns: repeat(2,1fr);
+                    gap: 1rem;
+                }
+
+                
+                .row1, 
+                .row2 {
+                    .form-control {
+                        width: 100%;
+                        height: 35px;
+                        padding: 0 20px;
+                        margin-bottom: 16px;
+                        font-size: 12px;
+                        border-radius: 30px;
+                        border: 1px solid $color-golden;
+                    }
+                }
+                .row2,
+                .row3 {
+                    margin-top: 1rem;
+                    input, textarea {
+                        width: 100px;
+                    }
+                }
+                .row3 {
+                    textarea{
+                        border-radius: .3rem;
+                        width: 100%;
+                        border-color: $color-golden;
+                    }
+                }
+            }
+            .contact_address {
+                padding: 3rem;
+                width: 100%; 
+                height: auto;
+                box-shadow: rgba(0,0,0,0.16) 0px 10px 36px 0px, rgba(0,0,0,0.06) 0px 10px 36px 1px;
+            }
+            .row {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 2rem;
+                position: relative;
+                padding-top: .7rem;
+
+                i {
+                    background: $color-golden;
+                    color: $color-white;
+                    border-radius: 50%;
+                    font-size: 20px;
+                    height: 30px;
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    width: 40px;
+                }
+                .info {
+                    margin-left: 3rem;
+                }
+            }
+            .btn {
+                margin-top: 1rem;
+                            font-size: 14px;
+                            display: inline-block;
+                            padding: 5px 15px;
+                            border-radius: 50px;
+                            border-color: $color-white;
+                            cursor: pointer;
+                            text-transform: uppercase;
+                            background: $color-golden;
+                            color: $color-dark;
+                            font-weight: bolder;
+                            transition: all .3s ease-in-out;
+            }
+        }
+    }
+}

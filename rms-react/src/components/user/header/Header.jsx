@@ -3,13 +3,13 @@ import Nav from './Nav';
 import Hero from './Hero';
 
 
-const Header = () => {
+const Header = ({cmp}) => {
 
 
 
   return <header className='home-header'>
     <div className='home-container'>
-      <Nav />
+      <Nav cmp = {cmp}/>
       <Hero />
     </div>
   </header>

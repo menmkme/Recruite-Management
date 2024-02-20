@@ -3,7 +3,7 @@ import React from 'react';
 import logo from "../../../assets/images/mdk.jpg";
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = ({cmp}) => {
 
 
   return (
@@ -15,11 +15,11 @@ const Nav = () => {
         </div>
         </div>
         <div className=' home-header-container-nav-right'>
-          <Link  to="/" >Home</Link>
-          <Link  to="/ratio">Ratio</Link>
-          <Link  to="/about">About</Link>
-          <Link  to="/contact">Contact</Link>
-          <Link  to="/login">Login</Link>
+          <Link className= {`${ cmp === 'home' ? 'home-header-container-nav-right--active-menu' : ''}`} to="/" >Home</Link>
+          <Link className= {`${ cmp === 'ratio' ? 'home-header-container-nav-right--active-menu' : ''}`} to="/ratio">Ratio</Link>
+          <Link className= {`${ cmp === 'about' ? 'home-header-container-nav-right--active-menu' : ''}`}  to="/about">About</Link>
+          <Link className= {`${ cmp === 'contact' ? 'home-header-container-nav-right--active-menu' : ''}`} to="/contact">Contact</Link>
+          <Link className= {`${ cmp === 'login' ? 'home-header-container-nav-right--active-menu' : ''}`} to="/login">Login</Link>
         </div>
       </div>
     </>

@@ -1,10 +1,11 @@
 import React from 'react';
 
 import logo from "../../../assets/images/mdk.jpg";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Nav = ({cmp}) => {
-
+  const location = useLocation();
+  console.log(location)
 
   return (
     <>
@@ -19,7 +20,17 @@ const Nav = ({cmp}) => {
           <Link className= {`${ cmp === 'ratio' ? 'home-header-container-nav-right--active-menu' : ''}`} to="/ratio">Ratio</Link>
           <Link className= {`${ cmp === 'about' ? 'home-header-container-nav-right--active-menu' : ''}`}  to="/about">About</Link>
           <Link className= {`${ cmp === 'contact' ? 'home-header-container-nav-right--active-menu' : ''}`} to="/contact">Contact</Link>
-          <Link className= {`${ cmp === 'login' ? 'home-header-container-nav-right--active-menu' : ''}`} to="/login">Login</Link>
+          <Link className= {`${ cmp === 'auth' ? 'home-header-container-nav-right--active-menu' : ''}`} 
+                            to={`${ 
+                                  (location.pathname === "/signup" &&"/signup") ||
+                                  (location.pathname === "/forgot-password" &&"/forgot-password") || "/login"
+                                }`}
+                                >
+            {  
+              (location.pathname === "/signup" && "Sign_Up") ||
+              (location.pathname === "/forgot-password" && "Reset_Password") ||
+                "Login"}
+          </Link>
         </div>
       </div>
     </>

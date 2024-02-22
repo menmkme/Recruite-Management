@@ -14,7 +14,7 @@ import { fetchApiData } from '../../api/api'
 import 'tachyons'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Loader from '../../services/Loader';
-import Contact from './pages/Contact'
+//import Contact from './pages/Contact'
 
 const Main = () => {
   const [loader, setLoader] = useState(true);
@@ -33,10 +33,10 @@ const Main = () => {
         setLoader(false);
       };
       fetchData();
-    }, 1000);
+    }, 300);
     
   }, []);
-  console.log(data && data);
+  // console.log(data && data);
 
 
   return (
@@ -48,7 +48,7 @@ const Main = () => {
       <MatanSa matansas={data.matansas} />
        <MasuRai yaransas_alive={data.yaransas_alive}/>
        <WmdSkMt yaransas_dead={data.yaransas_dead}/>
-       <Contact cmp = "contact"/>
+       {/* <Contact cmp = "contact"/> */}
        {/* <Page />  */}
        <Footer />
       </>

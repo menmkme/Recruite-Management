@@ -4,19 +4,19 @@ import ContactForm from './ContactForm'
 import Footer from '../footer/footer'
 import Loader from '../../../services/Loader';
 
-const Contact = ({hero, cmp}) => {
+const Contact = () => {
     const [loader, setLoader] = useState(true)
     useEffect(() => {
         setTimeout(() => {
             setLoader(false);
-        }, 1000);
+        }, 500);
     }, []);
   return (
     <>
         {
             (loader && <Loader />) || (
             <>
-                <NavBar hero={hero} cmp="contact" />
+                <NavBar hero="Contact Us" cmp="contact" />
                 <ContactForm />
                 <Footer />
             </>

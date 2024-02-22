@@ -4,7 +4,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const matanSaItem = ({name,state,status,image,description,DOB}) => {
-  console.log(name, state, status, image, description, DOB);
+  //console.log(name, state, status, image, description, DOB);
   
   return (
     

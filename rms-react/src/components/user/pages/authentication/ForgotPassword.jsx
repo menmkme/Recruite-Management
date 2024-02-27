@@ -1,12 +1,22 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import NavBar from '../navigation/NavBar'
 import Footer from '../../footer/footer'
 import { Link } from 'react-router-dom'
 import mdk from '../../../../assets/images/mdk.jpg'
+import Loader from '../../../../services/Loader';
 
 const ForgotPassword = () => {
+    const [loader, setLoader] = useState(true)
+    useEffect(() => {
+        setTimeout(() => {
+            setLoader(false);
+        }, 500);
+    }, []);
   return (
-    <>
+
+    
+        (loader && <Loader />) ||
+        <>
         <NavBar hero="Forgot Password" cmp="auth"/>
         <section className='login'>
         <div className='container'>
@@ -42,6 +52,8 @@ const ForgotPassword = () => {
     </section>
         <Footer />
     </>
+    
+    
   )
 }
 

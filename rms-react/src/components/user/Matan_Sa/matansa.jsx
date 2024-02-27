@@ -22,6 +22,7 @@ const Matansa = ({ matansas }) => {
             matansas && matansas.map((matansa, index) => (
               <MatansaItemItem
                 key={index}
+                id={matansa.id}
                 name={matansa.name}
                 state={matansa.state}
                 status={matansa.status}

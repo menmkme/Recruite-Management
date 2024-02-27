@@ -4,11 +4,63 @@
     padding-bottom: 3rem; 
 
     .hero_section {
-        padding-top: 3rem;
+        padding-top: -2rem;
+       
     }
     .title {
         font-size: 30px;
         color: $color-golden;
         text-align: center;
+    }
+    .hero-data {
+        display: flex;
+            
+        justify-content: space-around;
+
+        .left {
+        display: flex;    
+        justify-content: space-around;
+
+        .icon{
+            img {
+             width: 100px;
+             height: 100px;
+            }
+         }
+            .details {
+                margin-left: 1rem;
+
+                
+     
+                .status {
+                    margin-top: 0.6rem;
+                    // display: flex;
+                    // justify-content: space-between;
+
+                    .country {
+                        padding-bottom: 0.5rem;
+                    }
+                    .date {
+                        padding-bottom: 0.3rem;
+                    }
+     
+                    .country span, 
+                    .date span, 
+                        .date i, .country i  {
+                        margin-left: 0.3rem;
+                    }
+                }
+             }
+        }
+         //padding-left: 25rem;
+         .right {
+            .total {
+                background: $color-golden;
+                color: $color-white;
+                padding: 1rem;
+                border-radius: 1rem;
+            }
+         }
+        
     }
 }

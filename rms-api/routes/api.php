@@ -42,3 +42,4 @@ Route::group([
 });
 
 Route::get('/home', [HomeController::class, 'index']);
+Route::get('/home/{id}', [HomeController::class, 'getSingleWife']);

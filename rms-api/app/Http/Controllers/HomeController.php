@@ -22,4 +22,11 @@ class HomeController extends Controller
         $data['yaransas_dead'] = Matansa::where([['status', 'Dead']])->get();
         return $this->apiResponse('success', $data, Response::HTTP_OK,true);
     }
+
+    public function getSingleWife($id) { 
+        $data['matansas'] = Matansa::with('yaransas')->where([['id', $id]])->first();
+    
+        return $this->apiResponse('success', $data, Response::HTTP_OK,true);
+        
+    }
 }
